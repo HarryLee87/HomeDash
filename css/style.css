@@ -77,7 +77,10 @@ body {
   text-align: center;
   height: 260px;
   font-size: 8rem;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: -20vh;
   color: white;
   padding: -100px;
 }
