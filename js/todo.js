@@ -24,7 +24,10 @@ function paintToDo(newToDo) {
 }
 
 function handleDeleteToDoBtn(event) {
-  event.target.parentElement.remove();
+  const list = event.target.parentElement;
+  list.remove();
+  toDos = toDos.filter((todo) => todo.id !== parseInt(list.id));
+  saveToDos();
 }
 
 function handleToDoSubmit(event) {
